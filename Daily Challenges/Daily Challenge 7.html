@@ -5,12 +5,17 @@
     <title>Daily Challenge 7</title>
     <script>
       function showButton(){
-        var  - document.getElementById("button").style.display = "";
+        var btn = document.getElementById("btn");btn.style.display = "block";
+      }
+      function bigImg(){
+        var img = document.getElementById("image");
+        img.style.width ="50%";
       }
     </script>
   </head>
   <body>
+    <img src="../Applications/Pictures/Honey1.jpg" id="image" width = "25%"/>
     <div id="text" onClick="showButton()">Some Text</div>
-    <button </button>
+    <button id="btn" style="display:none;" onmouseover="bigImg()">Wanna see a trick?</button>
   </body>
 </html>
